@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+        }
+        .card-plan {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-plan:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .brand-blue { background-color: #1e3a8a; } /* Azul MentoraPro */
+        .brand-text { color: #1e3a8a; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
+            <div>
+                <h1 class="text-3xl font-bold brand-text tracking-tight uppercase">MentoraPro</h1>
+                <p class="text-gray-500 font-medium italic">Mini Campaña: "De la idea al negocio con guía real"</p>
+            </div>
+            <div class="bg-white shadow-sm border border-gray-200 px-6 py-2 rounded-full flex items-center gap-3">
+                <span class="flex h-3 w-3 rounded-full bg-green-500"></span>
+                <span class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Cronograma de Ejecución</span>
+            </div>
+        </div>
+
+        <!-- Calendar Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            
+            <!-- Lunes -->
+            <div class="card-plan bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                <div class="p-4 gradient-bg text-white text-center font-bold">
+                    LUNES
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-brands fa-linkedin text-blue-700 text-xl"></i>
+                        <span class="text-xs font-bold text-gray-400">LINKEDIN</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2 leading-tight">Publicación 1: Storytelling</h3>
+                    <p class="text-sm text-gray-600 mb-4">"¿Y si tu idea sí funciona...?"</p>
+                    <div class="bg-blue-50 text-blue-700 text-[10px] font-black py-1 px-3 rounded-full inline-block">
+                        ETAPA: AWARENESS
+                    </div>
+                </div>
+                <div class="px-6 py-4 border-t border-gray-50 bg-gray-50/50">
+                    <p class="text-[11px] text-gray-500 uppercase font-bold">Objetivo</p>
+                    <p class="text-xs text-gray-700">Conexión emocional y autoridad.</p>
+                </div>
+            </div>
+
+            <!-- Miércoles -->
+            <div class="card-plan bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                <div class="p-4 gradient-bg text-white text-center font-bold">
+                    MIÉRCOLES
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-brands fa-instagram text-pink-600 text-xl"></i>
+                        <span class="text-xs font-bold text-gray-400">INSTAGRAM</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2 leading-tight">Publicación 2: Educativo</h3>
+                    <p class="text-sm text-gray-600 mb-4">"3 errores al emprender sin mentoría"</p>
+                    <div class="bg-indigo-50 text-indigo-700 text-[10px] font-black py-1 px-3 rounded-full inline-block">
+                        ETAPA: ENGAGEMENT
+                    </div>
+                </div>
+                <div class="px-6 py-4 border-t border-gray-50 bg-gray-50/50">
+                    <p class="text-[11px] text-gray-500 uppercase font-bold">Objetivo</p>
+                    <p class="text-xs text-gray-700">Educar y posicionar expertise.</p>
+                </div>
+            </div>
+
+            <!-- Viernes -->
+            <div class="card-plan bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden ring-2 ring-blue-500 ring-offset-2">
+                <div class="p-4 bg-blue-600 text-white text-center font-bold relative">
+                    VIERNES
+                    <span class="absolute -top-1 -right-1 bg-red-500 text-[8px] px-2 py-1 rounded-full animate-pulse">HOT DAY</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex gap-1">
+                            <i class="fa-brands fa-facebook text-blue-600"></i>
+                            <i class="fa-brands fa-instagram text-pink-600"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-400">FB / IG</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2 leading-tight">Publicación 3: Conversión</h3>
+                    <p class="text-sm text-gray-600 mb-4">"¿Es rentable tu idea? Agenda ahora"</p>
+                    <div class="bg-red-50 text-red-700 text-[10px] font-black py-1 px-3 rounded-full inline-block">
+                        ETAPA: LEADS (VENTA)
+                    </div>
+                </div>
+                <div class="px-6 py-4 border-t border-gray-50 bg-gray-50/50">
+                    <p class="text-[11px] text-gray-500 uppercase font-bold">Objetivo</p>
+                    <p class="text-xs text-gray-700">Conversión directa a sesiones express.</p>
+                </div>
+            </div>
+
+            <!-- Sábado -->
+            <div class="card-plan bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                <div class="p-4 border-b border-gray-100 text-gray-400 text-center font-bold">
+                    SÁBADO
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-bolt text-yellow-500 text-xl"></i>
+                        <span class="text-xs font-bold text-gray-400">STORIES (IG/LI)</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2 leading-tight">Refuerzo: Story Interactiva</h3>
+                    <p class="text-sm text-gray-600 mb-4">Guion táctil de 3 pantallas con CTA.</p>
+                    <div class="bg-yellow-50 text-yellow-700 text-[10px] font-black py-1 px-3 rounded-full inline-block">
+                        ETAPA: CONVERSIÓN
+                    </div>
+                </div>
+                <div class="px-6 py-4 border-t border-gray-50 bg-gray-50/50">
+                    <p class="text-[11px] text-gray-500 uppercase font-bold">Objetivo</p>
+                    <p class="text-xs text-gray-700">Recordación y cierre de tráfico.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Info -->
+        <div class="mt-12 bg-gray-900 rounded-2xl p-8 text-white flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <h4 class="text-xl font-bold mb-2">Estrategia de Embudos (Funnel)</h4>
+                <p class="text-gray-400 text-sm max-w-md">La secuencia respeta el ciclo de decisión del emprendedor: primero empatizamos con el dolor, luego demostramos conocimiento y finalizamos con la solución directa.</p>
+            </div>
+            <div class="flex gap-4">
+                <div class="text-center">
+                    <p class="text-2xl font-bold">10k</p>
+                    <p class="text-[10px] text-gray-400 uppercase">Alcance Est.</p>
+                </div>
+                <div class="w-px h-10 bg-gray-700"></div>
+                <div class="text-center">
+                    <p class="text-2xl font-bold">5%</p>
+                    <p class="text-[10px] text-gray-400 uppercase">Engagement</p>
+                </div>
+                <div class="w-px h-10 bg-gray-700"></div>
+                <div class="text-center">
+                    <p class="text-2xl font-bold">50</p>
+                    <p class="text-[10px] text-gray-400 uppercase">Leads Meta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
